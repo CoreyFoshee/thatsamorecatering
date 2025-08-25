@@ -6,6 +6,10 @@
   "scripts": {
     "start": "node catering-server.js",
     "dev": "nodemon catering-server.js",
+    "next:dev": "next dev",
+    "next:build": "next build",
+    "next:start": "next start",
+    "next:lint": "next lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,12 +22,18 @@
   "author": "That's Amore Pizzeria",
   "license": "MIT",
   "dependencies": {
+    "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1",
-    "ejs": "^3.1.9"
+    "next": "^15.5.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.1"
+    "autoprefixer": "^10.4.21",
+    "nodemon": "^3.0.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
   },
   "engines": {
     "node": ">=14.0.0"

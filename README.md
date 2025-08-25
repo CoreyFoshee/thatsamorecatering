@@ -1,214 +1,148 @@
-# That's Amore Catering - Standalone Website
+# That's Amore Catering Website
 
-This is a completely separate, standalone catering website that operates independently from the main That's Amore Pizzeria website.
+A professional catering website for That's Amore Pizza, featuring both Express.js (EJS) and Next.js (React) versions.
 
 ## 🏗️ Project Structure
 
-```
-catering-website/
-├── package.json                 # Dependencies and scripts
-├── catering-server.js          # Express server for catering site
-├── README.md                   # This file
-├── views/                      # EJS templates
-│   ├── catering-layout.ejs     # Main layout template
-│   ├── catering-home.ejs       # Homepage content
-│   └── partials/               # Reusable components
-│       ├── catering-navbar.ejs # Navigation bar
-│       └── catering-footer.ejs # Footer
-├── public/                     # Static assets
-│   ├── css/                    # Stylesheets
-│   ├── js/                     # JavaScript files
-│   ├── images/                 # Images
-│   ├── Logo/                   # Logo files
-│   └── videos/                 # Video files
-└── data/                       # Data files (if needed)
-```
+This project contains both versions of the website:
 
-## 🚀 Getting Started
+- **Express.js Version**: Traditional server-side rendering with EJS templates
+- **Next.js Version**: Modern React-based website with server-side rendering
 
-### Prerequisites
-- Node.js (version 14 or higher)
-- npm or yarn
+## 🚀 Running the Express.js Version
 
-### Installation
+The Express.js version runs on port 3001 and serves the EJS templates.
 
-1. **Navigate to the catering website directory:**
-   ```bash
-   cd catering-website
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-4. **Or start the production server:**
-   ```bash
-   npm start
-   ```
-
-The catering website will be available at `http://localhost:3001`
-
-## 🌐 Available Routes
-
-- **`/`** - Homepage with catering overview
-- **`/menu`** - Complete catering menu (to be implemented)
-- **`/services`** - Detailed catering services (to be implemented)
-- **`/quote`** - Catering quote form (to be implemented)
-- **`/contact`** - Contact information (to be implemented)
-- **`/test`** - API test endpoint
-
-## 🎨 Features
-
-### 1. **Standalone Architecture**
-- Completely separate from main restaurant website
-- Independent server and routing
-- Dedicated catering branding and messaging
-
-### 2. **Professional Design**
-- Modern, responsive design using Tailwind CSS
-- Catering-focused color scheme and typography
-- Mobile-first approach
-
-### 3. **Content Structure**
-- Hero section with catering focus
-- Service overviews (Corporate, Private, Special Events)
-- Menu preview with pricing
-- Catering tips and guidelines
-- Call-to-action sections
-
-### 4. **Navigation**
-- Clean, intuitive navigation
-- Mobile-responsive menu
-- Quick access to key sections
-
-## 🔧 Configuration
-
-### Port Configuration
-The catering website runs on port 3001 by default to avoid conflicts with the main website (port 3000).
-
-```javascript
-const PORT = process.env.PORT || 3001;
-```
-
-### Environment Variables
-- `PORT` - Server port (default: 3001)
-- `NODE_ENV` - Environment (development/production)
-
-## 📱 Responsive Design
-
-The website is fully responsive and optimized for:
-- Desktop computers
-- Tablets
-- Mobile phones
-- All modern browsers
-
-## 🚀 Deployment
-
-### Local Development
 ```bash
+# Install dependencies
+npm install
+
+# Start the Express server
+npm start
+
+# Or run in development mode with auto-reload
 npm run dev
 ```
 
-### Production
+Visit `http://localhost:3001` to see the Express.js version.
+
+## ⚡ Running the Next.js Version
+
+The Next.js version provides a modern React-based experience.
+
 ```bash
-npm start
+# Install dependencies (already done)
+npm install
+
+# Start Next.js development server
+npm run next:dev
+
+# Build for production
+npm run next:build
+
+# Start production server
+npm run next:start
 ```
 
-### Docker (if needed)
-```dockerfile
-FROM node:16-alpine
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-EXPOSE 3001
-CMD ["npm", "start"]
+Visit `http://localhost:3000` to see the Next.js version.
+
+## 📁 File Structure
+
+```
+catering-website/
+├── app/                          # Next.js app directory
+│   ├── components/               # React components
+│   │   ├── HeroSection.js
+│   │   ├── CateringServices.js
+│   │   ├── CateringMenu.js
+│   │   ├── CateringForm.js
+│   │   ├── CallToAction.js
+│   │   └── FloatingContact.js
+│   ├── globals.css               # Global styles with Tailwind
+│   ├── layout.js                 # Root layout component
+│   └── page.js                   # Main page component
+├── views/                        # EJS templates (Express version)
+│   ├── catering-home.ejs         # Main catering homepage
+│   └── catering-layout.ejs       # Layout template
+├── public/                       # Static assets
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   ├── videos/
+│   └── Logo/
+├── catering-server.js            # Express.js server
+├── next.config.js                # Next.js configuration
+├── tailwind.config.js            # Tailwind CSS configuration
+├── postcss.config.js             # PostCSS configuration
+└── package.json                  # Dependencies and scripts
 ```
 
-## 🔗 Integration
+## 🎨 Features
 
-### With Main Website
-- Can be deployed to a subdomain (e.g., `catering.thatsamorepizza.com`)
-- Shares assets (images, logos, videos) with main site
-- Independent operation and maintenance
+### Express.js Version
+- Server-side rendering with EJS templates
+- Traditional Express.js routing
+- Static file serving
+- Form handling (ready for backend integration)
 
-### External Services
-- Ready for integration with catering management systems
-- Can be connected to online ordering platforms
-- Prepared for CRM integration
+### Next.js Version
+- Modern React components
+- Server-side rendering
+- Optimized performance
+- Responsive design with Tailwind CSS
+- Interactive form handling
+- Component-based architecture
 
-## 📈 Future Enhancements
+## 🎯 Key Sections
 
-### Phase 1 (Current)
-- ✅ Basic website structure
-- ✅ Homepage with service overview
-- ✅ Responsive navigation
-- ✅ Professional layout
+1. **Hero Section** - Professional catering introduction with video background
+2. **Catering Services** - Corporate events, private parties, special occasions
+3. **Catering Menu** - Complete menu with pricing for all items
+4. **Catering Form** - Interactive quote request form
+5. **Call to Action** - Contact information and next steps
+6. **Floating Contact** - Always-visible contact button
 
-### Phase 2 (Next)
-- [ ] Complete catering menu page
-- [ ] Detailed services page
-- [ ] Quote request form
-- [ ] Contact page
+## 🛠️ Technologies Used
 
-### Phase 3 (Future)
-- [ ] Online ordering system
-- [ ] Customer portal
-- [ ] Event management
-- [ ] Payment processing
-- [ ] Analytics and reporting
+- **Express.js Version**: Node.js, Express, EJS, Tailwind CSS
+- **Next.js Version**: React 19, Next.js 15, Tailwind CSS, PostCSS
+- **Styling**: Tailwind CSS with custom color scheme
+- **Fonts**: Playfair Display (headings), Inter (body text)
 
-## 🛠️ Development
+## 🔧 Customization
 
-### Adding New Pages
-1. Create new EJS template in `views/`
-2. Add route in `catering-server.js`
-3. Update navigation if needed
-4. Test responsiveness
+### Colors
+The website uses a custom color scheme defined in `tailwind.config.js`:
+- Primary: Maroon (#8B0000)
+- Secondary: Cream (#F5F5DC)
+- Accent: Goldenrod (#DAA520)
 
-### Styling
-- Uses Tailwind CSS for styling
-- Custom CSS can be added in `public/css/catering-styles.css`
-- Maintains consistent branding with main site
+### Fonts
+- Headings: Playfair Display (serif)
+- Body: Inter (sans-serif)
 
-### Content Updates
-- All content is in EJS templates
-- Easy to update text, images, and pricing
-- SEO-optimized meta tags
+## 📱 Responsive Design
 
-## 📊 Performance
+Both versions are fully responsive and optimized for:
+- Mobile devices
+- Tablets
+- Desktop computers
+- Large screens
 
-- Optimized for fast loading
-- Responsive images and videos
-- Efficient asset delivery
-- SEO best practices
+## 🚀 Deployment
 
-## 🔒 Security
+### Express.js Version
+Can be deployed to any Node.js hosting platform (Heroku, DigitalOcean, etc.)
 
-- Input validation on forms
-- Secure routing
-- Environment variable protection
-- Regular dependency updates
+### Next.js Version
+Can be deployed to Vercel, Netlify, or any platform supporting Next.js.
 
-## 📞 Support
+## 📞 Contact
 
-For technical support or questions about the catering website:
-- **Email**: catering@thatsamorepizza.com
-- **Phone**: (504) 463-5384
-- **Address**: 4441 West Metairie Ave, Metairie, LA 70001
+For questions about the website or catering services, contact That's Amore Pizza:
+- Phone: (504) 463-5384
+- Website: [thatsamorepizzametairie.com](https://www.thatsamorepizzametairie.com)
 
 ## 📄 License
 
-This project is proprietary to That's Amore Pizzeria. All rights reserved.
-
----
-
-**Last Updated**: December 2024  
-**Version**: 1.0.0  
-**Status**: Active Development
+MIT License - see LICENSE file for details.
