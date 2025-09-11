@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/Logo/favicon.jpg" />
         <link rel="apple-touch-icon" href="/Logo/favicon.jpg" />
         <link rel="manifest" href="/manifest.json" />
+        <script src="https://app.thatsamorepizzaonline.com/js/form_embed.js"></script>
       </head>
       <body className="font-body antialiased">
         {children}
