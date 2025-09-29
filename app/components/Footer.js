@@ -55,9 +55,9 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="https://thatsamorepizzaonline.com" className="text-gray-300 hover:text-accent transition-colors duration-300">Main Website</a></li>
-              <li><a href="https://thatsamorepizzaonline.com/menu" className="text-gray-300 hover:text-accent transition-colors duration-300">Menu</a></li>
-              <li><a href="https://thatsamorepizzaonline.com/catering" className="text-gray-300 hover:text-accent transition-colors duration-300">Catering</a></li>
-              <li><a href="https://thatsamorepizzaonline.com/franchise" className="text-gray-300 hover:text-accent transition-colors duration-300">Franchise</a></li>
+              <li><a href="https://thatsamorepizzaonline.com/" className="text-gray-300 hover:text-accent transition-colors duration-300">Menu</a></li>
+              <li><a href="https://thatsamorepizzaonline.com/" className="text-gray-300 hover:text-accent transition-colors duration-300">Catering</a></li>
+              <li><a href="https://thatsamorepizzaonline.com/" className="text-gray-300 hover:text-accent transition-colors duration-300">Franchise</a></li>
               <li><a href="https://thatsamorepizzaonline.com/contact" className="text-gray-300 hover:text-accent transition-colors duration-300">Contact</a></li>
             </ul>
           </div>
