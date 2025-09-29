@@ -111,12 +111,12 @@ export default function Footer() {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <p className="text-gray-300">4441 West Metairie Ave</p>
             <p className="text-gray-300">Metairie, LA</p>
-            <p className="text-gray-300">(504) 463-5384</p>
+            <p className="text-gray-300">(504) 473-5384</p>
             <p className="text-gray-300">kennedyda24@att.net</p>
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-8">
-          <p className="text-gray-400">© 2024 That's Amore Pizzeria. All rights reserved.</p>
+          <p className="text-gray-400">© 2025 That's Amore Pizzeria. All rights reserved.</p>
         </div>
       </div>
     </footer>

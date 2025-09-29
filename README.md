@@ -140,7 +140,7 @@ Can be deployed to Vercel, Netlify, or any platform supporting Next.js.
 ## 📞 Contact
 
 For questions about the website or catering services, contact That's Amore Pizza:
-- Phone: (504) 463-5384
+- Phone: (504) 473-5384
 - Website: [thatsamorepizzametairie.com](https://www.thatsamorepizzametairie.com)
 
 ## 📄 License
