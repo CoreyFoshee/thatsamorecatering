@@ -28,27 +28,27 @@ export default function HeroSection() {
       </div>
       
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center justify-center min-h-[100vh] md:min-h-[90vh] px-4">
+      <div className="relative z-10 flex items-center justify-center min-h-[100vh] md:min-h-[90vh] px-6 sm:px-8 md:px-4">
         <div className="text-center max-w-6xl mx-auto">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-dark mb-4 md:mb-6 leading-tight w-full md:w-auto mx-auto">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-dark mb-4 md:mb-6 leading-tight w-full md:w-auto mx-auto px-2 sm:px-0">
             <span className="block">Professional</span>
             <span className="block text-primary">Catering Services</span>
           </h1>
           
           {/* Catering Subtitle */}
-          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-body text-gray-700 mb-4 md:mb-8 px-2 md:px-4">
+          <div className="text-base md:text-lg lg:text-xl xl:text-2xl font-body text-gray-700 mb-4 md:mb-8 px-4 md:px-4">
             <div className="typewriter-text mb-2">Corporate Events • Private Parties • Special Occasions</div>
           </div>
           
           {/* Catering Call to Action */}
-          <div className="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-4 md:mb-8 max-w-3xl mx-auto px-2">
+          <div className="text-base md:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-4 md:mb-8 max-w-3xl mx-auto px-4 sm:px-2">
             <p className="mb-2 md:mb-4">From intimate gatherings to large corporate events</p>
             <p className="font-semibold text-primary">Let us handle the food while you enjoy the celebration!</p>
           </div>
           
           {/* Catering CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-4 md:mb-8">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-4 md:mb-8 px-2 sm:px-0">
             <a href="#catering-form" className="bg-gradient-to-r from-primary to-maroon text-white px-6 md:px-10 py-3 md:py-4 rounded-full text-lg md:text-xl font-medium hover:from-maroon hover:to-primary transition-all duration-300 transform hover:scale-105 shadow-2xl border-2 border-accent/30 w-full sm:w-auto">
               Get Catering Quote
             </a>
